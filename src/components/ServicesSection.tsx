@@ -1,16 +1,19 @@
 const ServicesSection = () => {
   const services = [
     {
+      image: <img src="/img/session3/1.png" alt="Dr. Carmine De Siervi"  />,
       title: "Consultas e Mapeamento Corporal",
-      description: "Com uma consulta detalhada e um mapeamento corporal total, garantimos que sua pele seja cuidadosamente analisada, utilizando a dermatoscopia digital para detectar possíveis alterações antes que se tornem um problema maior."
+      description: "Com uma consulta detalhada e um mapeamento corporal total, garantimos que sua pele seja cuidadosamente analisada. O serviço dispõe de um dos equipamentos mais modernos, um FotoFinder com torre automática, que realiza o mapeamento corporal total com imagens de alta resolução, permitindo a detecção precoce de alterações na pele e garantindo mais precisão e segurança no acompanhamento das lesões."
     },
     {
+      image: <img src="/img/session3/2.png" alt="Dr. Carmine De Siervi"  />,
       title: "Diagnóstico de Alta Precisão",
-      description: "Nosso diagnóstico é realizado com técnicas de ponta, como biopsias e ultrassonografia dermatológica, para oferecer um diagnóstico claro e preciso, resultando em tratamentos eficazes."
+      description: "Nosso diagnóstico é realizado com técnicas de ponta, como dermatoscopia. biopsias e ultrassonografia dermatológica de alta resolução, para oferecer um diagnóstico claro e preciso, resultando em tratamentos eficazes."
     },
     {
-      title: "Cirurgias Avançadas",
-      description: "Do tratamento clínico ao cirúrgico, oferecemos soluções para todos os tipos de câncer de pele. Além disso, a Cirurgia de Mohs é uma técnica avançada que permite a remoção precisa de tumores, com mínimo impacto estético."
+      image: <img src="/img/session3/3.png" alt="Dr. Carmine De Siervi"  />,
+      title: "Tratamento Completo e Cirurgias Avançadas",
+      description: <p>Do tratamento clínico ao cirúrgico, oferecemos soluções para todos os tipos de câncer de pele, inclusive a <strong>Cirurgia de Mohs</strong> é uma técnica avançada que permite a remoção precisa de tumores, com mínimo impacto estético.`</p>
     }
   ];
 
@@ -27,12 +30,7 @@ const ServicesSection = () => {
             Como podemos cuidar de você e da sua pele
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Somos especialista no <strong>diagnóstico, tratamento e prevenção do câncer de pele</strong>. 
-            Nosso compromisso é cuidar da sua saúde com uma abordagem multidisciplinar, reunindo 
-            profissionais de excelência para garantir que você receba o melhor cuidado possível.
-          </p>
-          <p className="text-lg text-medical-blue font-semibold mt-4">
-            Estamos aqui para te ajudar a cuidar de algo tão precioso quanto a sua pele.
+          Aqui no <strong>Grupo de Oncologia Cutânea</strong>, oferecemos uma abordagem integrada que cuida da sua pele desde a prevenção até o tratamento. Estamos comprometidos com a saúde da sua pele e com o seu bem-estar.
           </p>
         </div>
 
@@ -43,8 +41,8 @@ const ServicesSection = () => {
               className="bg-background rounded-2xl p-8 shadow-card-soft hover:shadow-card-hover transition-all duration-500 hover:-translate-y-1 animate-fade-in-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-16 h-16 bg-medical-blue rounded-xl flex items-center justify-center mb-6">
-                <div className="w-8 h-8 bg-background rounded"></div>
+              <div className="max-w-max bg-medical-blue/10 mx-auto mb-6 flex items-center justify-center group-hover:bg-medical-orange/10 transition-colors duration-300">
+                <span className="text-medical-blue text-sm text-center">{service.image}</span>
               </div>
               
               <h3 className="text-2xl font-bold text-medical-blue mb-4">

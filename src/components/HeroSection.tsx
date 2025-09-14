@@ -9,35 +9,28 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div className="space-y-6 animate-fade-in-up">
-            <div className="flex items-center space-x-3 mb-4">
-              {/* Logo placeholder */}
-              <div className="w-16 h-16 bg-medical-orange rounded-lg flex items-center justify-center">
-                <div className="w-10 h-10 bg-background rounded"></div>
-              </div>
-              <span className="text-background/80 font-medium">GRUPO DE ONCOLOGIA CUTÂNEA</span>
-            </div>
+          <div className="space-y-6 animate-fade-in-up mt-12 ">
             
-            <h1 className="text-4xl lg:text-6xl font-bold text-background leading-tight">
-              Grupo de Oncologia Cutânea
+            <h1 className="text-4xl   lg:text-6xl font-bold text-background leading-tight">
+              Bem-vindo ao Grupo de Oncologia Cutânea!
             </h1>
-            
             <p className="text-xl text-background/90 leading-relaxed max-w-lg">
-              Somos especialista no diagnóstico, tratamento e prevenção do câncer de pele. 
-              Nosso compromisso é cuidar da sua saúde com uma abordagem multidisciplinar, 
-              reunindo profissionais de excelência para garantir que você receba o melhor 
-              cuidado possível. Estamos aqui para te ajudar a cuidar de algo tão precioso quanto a sua pele.
-            </p>
-            
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+              Aqui, oferecemos um atendimento integral no combate ao câncer de pele, desde a prevenção até o diagnóstico e tratamento. Nosso compromisso é cuidar da sua saúde com uma abordagem multidisciplinar, unindo especialistas experientes que se dedicam a proporcionar um olhar sistêmico para o melhor cuidado.         
+              <br />
+              <br />
+              Sabemos que a sua pele é um bem precioso, e estamos prontos para te apoiar em cada passo dessa jornada, com tecnologia avançada, ambiente acolhedor e os profissionais certos. 
+               
+            </p>            
+            <Button onClick={() => window.open("https://wa.me/557140205599?text=Ol%C3%A1%2C%20encontrei%20o%20Grupo%20de%20Oncologia%20Cut%C3%A2nea%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20consulta", "_blank")} variant="hero" size="lg" className="text-lg px-8 py-4">
               Agenda uma consulta
             </Button>
           </div>
           
-          {/* Team Image Placeholder */}
-          <div className="relative">
+          <div className="relative mb-12" >
             <div className="w-full h-[500px] bg-background/10 rounded-2xl border-2 border-background/20 flex items-center justify-center">
-              <span className="text-background/60 text-lg font-medium">Team Photo Placeholder</span>
+             <img  src="/img/equipe.png" 
+                alt="Equipe do Grupo de Oncologia Cutânea" 
+                className="w-full h-full object-cover rounded-2xl" />
             </div>
           </div>
         </div>

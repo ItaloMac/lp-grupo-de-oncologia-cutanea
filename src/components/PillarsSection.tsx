@@ -2,18 +2,18 @@ const PillarsSection = () => {
   const pillars = [
     {
       title: "Prevenção: a base de tudo.",
-      description: "A prevenção é o primeiro passo essencial para um futuro saudável. Detectar mudanças na pele logo no início pode ser a chave para um tratamento mais eficaz e com resultados ainda melhores. Nossos exames de mapeamento corporal e dermatoscopia digital são ferramentas poderosas para realizar essa identificação precoce.",
-      image: "Doctor 1 Placeholder"
+      description: "A prevenção é base importante para uma pele saudável. O uso de protetor solar de forma constante e apropriada e as idas regulares ao dermatologista fazem parte dessa rotina de prevenção. Nossa equipe conta com dermatologistas que, além de orientar na saúde da pele, possuem um olhar direcionado aos potenciais riscos dos sinais de câncer melanoma e não melanoma.",
+      image: <img src="/img/drcarmine.png" alt="Dr. Carmine De Siervi"  />
     },
     {
-      title: "Acompanhamento de perto.",
-      description: "Cuidar da pele não é apenas sobre proteção solar, é importante fazer exames regulares e manter o acompanhamento médico para identificar qualquer alteração. Estamos aqui para acompanhar você, oferecendo consultas personalizadas e monitoramento constante.",
-      image: "Doctor 2 Placeholder"
+      title: "Diagnóstico preciso.",
+      description: "Detectar mudanças na pele logo no início pode ser a chave para um tratamento mais eficaz e com resultados ainda melhores. Nossos exames de mapeamento corporal e dermatoscopia digital são ferramentas poderosas para realizar essa identificação precoce.",
+      image: <img src="/img/dramaria.png" alt="Dra. Maria das Graças"  />
     },
     {
-      title: "Diagnóstico Preciso.",
-      description: "Com o avanço da tecnologia, hoje podemos realizar exames como ultrassonografia dermatológica e biópsias em diversas técnicas, proporcionando um diagnóstico rápido e de alta precisão. Nossa missão é garantir que você receba o melhor cuidado, com um diagnóstico claro para o tratamento adequado.",
-      image: "Doctor 3 Placeholder"
+      title: "Exames avançados.",
+      description: "Uma vez detectado potenciais riscos de um câncer de pele, uma investigação mais minuciosa pode ser feita pela nossa equipe, proporcionando um diagnóstico rápido e preciso para tratamento adequado.",
+      image: <img src="/img/dralessio.png" alt="Dr. Alessio Brunn"  />
     }
   ];
 
@@ -29,7 +29,7 @@ const PillarsSection = () => {
             Nossa Abordagem em Três Pilares
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Combinamos prevenção, acompanhamento contínuo e diagnóstico preciso para oferecer 
+            Combinamos prevenção, diagnóstico preciso e exames avançados para oferecer 
             o melhor cuidado em oncologia cutânea.
           </p>
         </div>

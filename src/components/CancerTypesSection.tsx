@@ -3,17 +3,17 @@ const CancerTypesSection = () => {
     {
       title: "Carcinoma Basocelular:",
       description: "O mais frequente, aparece como pequenas manchas ou nódulos na pele, especialmente nas áreas expostas ao sol.",
-      images: ["Image 1", "Image 2", "Image 3"]
+      images: [<img src="/img/tiposcancer/1.png"/>, <img src="/img/tiposcancer/2.png"/>, <img src="/img/tiposcancer/3.png"/>]
     },
     {
       title: "Carcinoma Espinocelular:",
       description: "Menos comum, mas mais agressivo, pode surgir como lesões duras e vermelhas, com a tendência de sangrar.",
-      images: ["Image 4", "Image 5", "Image 6"]
+      images: [<img src="/img/tiposcancer/4.png"/>, <img src="/img/tiposcancer/5.png"/>, <img src="/img/tiposcancer/6.png"/>]
     },
     {
       title: "Melanoma:",
-      description: "O tipo mais grave, que aparece como mudanças em pintas ou manchas já existentes na pele. A detecção precoce é fundamental para um tratamento bem-sucedido.",
-      images: ["Image 7", "Image 8", "Image 9"]
+      description: "O tipo mais agressivo. Na maioria das vezes as lesões apresentam características do que chamamos a regra do ABCDE. A detecção precoce é fundamental para um tratamento bem-sucedido.",
+      images: [<img src="/img/tiposcancer/9.png"/>, <img src="/img/tiposcancer/10.png"/>, <img src="/img/tiposcancer/11.png"/>]
     }
   ];
 
@@ -25,10 +25,7 @@ const CancerTypesSection = () => {
             Câncer de Pele: Conheça os Tipos Mais Comuns
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            O câncer de pele é o tipo mais comum no Brasil, mas a boa notícia é que, com diagnóstico precoce, ele é tratável.
-          </p>
-          <p className="text-lg text-muted-foreground mt-2">
-            Conheça os tipos mais comuns:
+          O câncer de pele é o tipo mais comum no Brasil e no mundo, mas a boa notícia é que, com diagnóstico precoce, ele tem alto percentual de cura. Conheça os tipos mais comuns:
           </p>
         </div>
 

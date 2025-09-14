@@ -8,8 +8,8 @@ const Footer = () => {
           {/* Logo and Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-medical-orange rounded-lg flex items-center justify-center">
-                <div className="w-8 h-8 bg-background rounded"></div>
+              <div className="w-32 flex items-center justify-center">
+                <img src="/img/logobranco.png"/>
               </div>
               <div>
                 <h3 className="font-bold text-lg">Grupo de Oncologia Cutânea</h3>
@@ -37,15 +37,11 @@ const Footer = () => {
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-medical-orange" />
-                <span className="text-background/80">(xx) xxxx-xxxx</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Mail className="w-4 h-4 text-medical-orange" />
-                <span className="text-background/80">contato@exemplo.com</span>
+                <span className="text-background/80">(71) 4020-5599</span>
               </div>
               <div className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 text-medical-orange mt-0.5" />
-                <span className="text-background/80">Endereço completo</span>
+                <span className="text-background/80">Praça Colombo, 4 - Rio Vermelho, Salvador - BA, 41940-396</span>
               </div>
             </div>
           </div>
