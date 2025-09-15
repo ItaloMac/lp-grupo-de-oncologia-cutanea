@@ -12,10 +12,7 @@ const TeamSection = () => {
       name: "Dr. Alessio Brunn",
       specialty: "Formado pela Universidade Federal da Bahia em 2006, o Dr. Alessio é um especialista apaixonado pela oncologia cutânea. Com formação em Cirurgia Oncológica e Geral, ele já passou por instituições renomadas como o Hospital Aristides Maltez e o Hospital Clériston Andrade.Além de ser membro titular da Sociedade Brasileira de Cirurgia Oncológica e associado à AMIB, o Dr. Alessio também foi Oficial Médico da Marinha do Brasil. Atualmente, ele é preceptor na Residência Médica de Cirurgia Geral e atua como Oncologista Cirúrgico na UNACON – Feira de Santana.",
       image: <img src="/img/equipe/alessio.png" alt="Dr. Alessio Brunn"  />     },
-    {
-      name: "Dr. Eduardo Doria Filho",
-      specialty: "Formado pela Universidade Federal da Bahia em 2006, o Dr. Alessio é um especialista apaixonado pela oncologia cutânea. Com formação em Cirurgia Oncológica e Geral, ele já passou por instituições renomadas como o Hospital Aristides Maltez e o Hospital Clériston Andrade.Além de ser membro titular da Sociedade Brasileira de Cirurgia Oncológica e associado à AMIB, o Dr. Alessio também foi Oficial Médico da Marinha do Brasil. Atualmente, ele é preceptor na Residência Médica de Cirurgia Geral e atua como Oncologista Cirúrgico na UNACON – Feira de Santana.",
-      image: <img src="/img/equipe/eduardo.png" alt="Dr. Eduardo Doria Filho"  />     },
+   
     {
       name: "Dr. Iuri Santana",
       specialty: "Dr. Iuri é oncologista clínico, formado pelo ICESP – Instituto do Câncer do Estado de São Paulo – USP. Ele é membro das principais sociedades nacionais e internacionais, como o comitê de tumores cutâneos da Sociedade Brasileira de Oncologia Clínica e a comissão científica do Grupo Brasileiro de Melanoma. Ele também integra a American Society of Clinical Oncology, a European Society of Medical Oncology e a Câmara Técnica de Oncologia Clínica do CREMEB.",

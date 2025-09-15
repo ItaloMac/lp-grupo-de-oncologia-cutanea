@@ -43,9 +43,6 @@ const ContactSection = () => {
               <p className="text-xl opacity-90 leading-relaxed">
                 Quer saber mais ou agendar uma consulta? Estamos prontos para ajudar você.
               </p>
-              <p className="text-lg opacity-80 mt-4">
-                Preencha o formulário abaixo e nossa equipe entrará em contato.
-              </p>
             </div>
             
             {/* Contact Information */}

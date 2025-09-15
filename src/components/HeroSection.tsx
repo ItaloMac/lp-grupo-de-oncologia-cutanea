@@ -27,7 +27,7 @@ const HeroSection = () => {
           </div>
           
           <div className="relative mb-12" >
-            <div className="w-full h-[500px] bg-background/10 rounded-2xl border-2 border-background/20 flex items-center justify-center">
+            <div className="w-full h-[500px]  rounded-2xl border-2 border-background/20 flex items-center justify-center">
              <img  src="/img/equipe.png" 
                 alt="Equipe do Grupo de Oncologia Cutânea" 
                 className="w-full h-full object-cover rounded-2xl" />
