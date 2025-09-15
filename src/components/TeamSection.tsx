@@ -40,7 +40,19 @@ const TeamSection = () => {
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
-  const membersPerSlide = 3;
+  const [isMobile, setIsMobile] = useState(false);
+  
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  const membersPerSlide = isMobile ? 1 : 3;
   const totalSlides = Math.ceil(teamMembers.length / membersPerSlide);
 
   useEffect(() => {
@@ -81,7 +93,7 @@ const TeamSection = () => {
           {/* Navigation Arrows - Positioned outside slides */}
           <button
             onClick={prevSlide}
-            className="absolute -left-16 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white shadow-lg rounded-full p-2 transition-all duration-300 hover:scale-110"
+            className="absolute -left-4 lg:-left-16 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white shadow-lg rounded-full p-2 transition-all duration-300 hover:scale-110"
             aria-label="Slide anterior"
           >
             <ChevronLeft className="w-5 h-5 text-medical-blue" />
@@ -89,7 +101,7 @@ const TeamSection = () => {
           
           <button
             onClick={nextSlide}
-            className="absolute -right-16 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white shadow-lg rounded-full p-2 transition-all duration-300 hover:scale-110"
+            className="absolute -right-4 lg:-right-16 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white shadow-lg rounded-full p-2 transition-all duration-300 hover:scale-110"
             aria-label="Próximo slide"
           >
             <ChevronRight className="w-5 h-5 text-medical-blue" />
@@ -102,23 +114,23 @@ const TeamSection = () => {
             >
               {Array.from({ length: totalSlides }).map((_, slideIndex) => (
                 <div key={slideIndex} className="w-full flex-shrink-0">
-                  <div className="grid lg:grid-cols-3 gap-8 px-4">
+                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-4">
                     {teamMembers
                       .slice(slideIndex * membersPerSlide, (slideIndex + 1) * membersPerSlide)
                       .map((member, index) => (
                         <div 
                           key={`${slideIndex}-${index}`}
-                          className="group bg-background rounded-2xl p-8 shadow-card-soft hover:shadow-card-hover transition-all duration-500 hover:-translate-y-2"
+                          className="group bg-background rounded-2xl p-6 lg:p-8 shadow-card-soft hover:shadow-card-hover transition-all duration-500 hover:-translate-y-2 mx-auto max-w-sm lg:max-w-none"
                         >
-                          <div className="w-40 h-40 bg-medical-blue/10 rounded-2xl mx-auto mb-6 flex items-center justify-center group-hover:bg-medical-orange/10 transition-colors duration-300">
+                          <div className="w-32 h-32 lg:w-40 lg:h-40 bg-medical-blue/10 rounded-2xl mx-auto mb-4 lg:mb-6 flex items-center justify-center group-hover:bg-medical-orange/10 transition-colors duration-300 overflow-hidden">
                             {member.image}
                           </div>
                           
-                          <h3 className="text-2xl font-bold text-medical-blue mb-4 text-center">
+                          <h3 className="text-xl lg:text-2xl font-bold text-medical-blue mb-3 lg:mb-4 text-center">
                             {member.name}
                           </h3>
                           
-                          <p className="text-muted-foreground text-center leading-relaxed">
+                          <p className="text-muted-foreground text-center leading-relaxed text-sm lg:text-base">
                             {member.specialty}
                           </p>
                         </div>

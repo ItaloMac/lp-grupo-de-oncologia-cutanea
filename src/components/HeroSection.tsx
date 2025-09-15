@@ -27,10 +27,10 @@ const HeroSection = () => {
           </div>
           
           <div className="relative mb-12 lg:mb-0">
-            <div className="w-full h-[300px] sm:h-[450px] lg:h-[500px] rounded-2xl border-2 border-background/20 flex items-center justify-center overflow-hidden">
+            <div className="w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[500px] rounded-2xl flex items-center justify-center overflow-hidden">
              <img  src="/img/equipe.png" 
                 alt="Equipe do Grupo de Oncologia Cutânea" 
-                className="w-full h-full object-cover rounded-2xl" />
+                className="w-full h-full object-contain sm:object-cover rounded-2xl" />
             </div>
           </div>
         </div>

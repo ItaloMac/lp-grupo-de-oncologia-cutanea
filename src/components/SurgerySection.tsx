@@ -104,36 +104,80 @@ const SurgerySection = () => {
           </div>
         </div>
       </div>
-      <div className="bg-gradient-to-r from-gray-100 via-gray-50 to-white py-20 relative overflow-hidden">
+      <div className="bg-gradient-to-r from-gray-100 via-gray-50 to-white py-10 lg:py-20 relative overflow-hidden">
         {/* Decorative elements */}
-        <div className="absolute top-0 left-0 w-96 h-96 bg-background/10 rounded-full -translate-x-48 -translate-y-48"></div>
-        <div className="absolute bottom-0 right-0 w-64 h-64 bg-medical-blue/20 rounded-full translate-x-32 translate-y-32"></div>
+        <div className="absolute top-0 left-0 w-48 h-48 lg:w-96 lg:h-96 bg-background/10 rounded-full -translate-x-24 lg:-translate-x-48 -translate-y-24 lg:-translate-y-48"></div>
+        <div className="absolute bottom-0 right-0 w-32 h-32 lg:w-64 lg:h-64 bg-medical-blue/20 rounded-full translate-x-16 lg:translate-x-32 translate-y-16 lg:translate-y-32"></div>
         
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 text-background">
-              <h2 className="text-4xl lg:text-5xl text-medical-blue font-bold">
+          {/* Mobile Layout */}
+          <div className="lg:hidden space-y-6">
+            <div className="space-y-4 text-background">
+              <h2 className="text-2xl text-medical-blue font-bold">
+                Tratamento para doença avançada
+              </h2>
+              <p className="text-lg leading-relaxed text-medical-blue opacity-90">
+                Quando a doença fica mais avançada é preciso lançar mão de tratamentos antineoplásicos adicionais.
+              </p>
+              <div className="w-full max-w-full">
+                <img 
+                  src="/img/driuri.png" 
+                  alt="Dr. Iuri" 
+                  className="w-full h-auto max-w-sm shadow-lg rounded-lg mx-auto" 
+                />
+              </div>
+            </div>
+            
+            <div className="bg-background rounded-2xl p-6 shadow-medical">
+              <div className="space-y-4">
+                <div>
+                  <h3 className="text-lg font-bold text-medical-blue mb-2">Radioterapia:</h3>
+                  <p className="text-muted-foreground text-sm">
+                    A radioterapia é uma modalidade de tratamento local que pode substituir uma cirurgia quando esta não for possível ou mesmo complementar o tratamento cirúrgico.
+                  </p>
+                </div>
+                
+                <div>
+                  <h3 className="text-lg font-bold text-medical-blue mb-2">Tratamentos sistêmicos:</h3>
+                  <p className="text-muted-foreground text-sm">
+                    São as terapia medicamentosos utilizados para fazer o controle da doença mais avançada, seja aumentando as chances de cura antes ou depois da cirurgia, ou como base do tratamento da doença metastática. Utilizamos tratamentos de última geração tais como terapia alvo e diversas modalidades de imunoterapia.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop Layout */}
+          <div className="hidden lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="space-y-4 lg:space-y-6 text-background order-2 lg:order-1">
+              <h2 className="text-4xl xl:text-5xl text-medical-blue font-bold">
                 Tratamento para doença avançada
               </h2>
               <p className="text-xl leading-relaxed text-medical-blue opacity-90">
-              Quando a doença fica mais avançada é preciso lançar mão de tratamentos antineoplásicos adicionais.
+                Quando a doença fica mais avançada é preciso lançar mão de tratamentos antineoplásicos adicionais.
               </p>
-              <img src="/img/driuri.png" alt="Dr. Iuri" className="max-w-lg shadow-lg" />
+              <div className="w-full max-w-lg">
+                <img 
+                  src="/img/driuri.png" 
+                  alt="Dr. Iuri" 
+                  className="w-full h-auto shadow-lg rounded-lg" 
+                />
+              </div>
             </div>
             
-            <div className="bg-background rounded-2xl p-8 shadow-medical">
+            <div className="bg-background rounded-2xl p-8 shadow-medical order-1 lg:order-2">
               <div className="space-y-6">
                 <div>
                   <h3 className="text-xl font-bold text-medical-blue mb-3">Radioterapia:</h3>
                   <p className="text-muted-foreground">
-                  A radioterapia é uma modalidade de tratamento local que pode substituir uma cirurgia quando esta não for possível ou mesmo complementar o tratamento cirúrgico.
+                    A radioterapia é uma modalidade de tratamento local que pode substituir uma cirurgia quando esta não for possível ou mesmo complementar o tratamento cirúrgico.
                   </p>
                 </div>
                 
                 <div>
                   <h3 className="text-xl font-bold text-medical-blue mb-3">Tratamentos sistêmicos:</h3>
                   <p className="text-muted-foreground">
-                  São as terapia medicamentosos utilizados para fazer o controle da doença mais avançada, seja aumentando as chances de cura antes ou depois da cirurgia, ou como base do tratamento da doença metastática. Utilizamos tratamentos de última geração tais como terapia alvo e diversas modalidades de imunoterapia.
+                    São as terapia medicamentosos utilizados para fazer o controle da doença mais avançada, seja aumentando as chances de cura antes ou depois da cirurgia, ou como base do tratamento da doença metastática. Utilizamos tratamentos de última geração tais como terapia alvo e diversas modalidades de imunoterapia.
                   </p>
                 </div>
               </div>
