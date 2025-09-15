@@ -49,7 +49,16 @@ const Footer = () => {
         
         <div className="border-t border-background/20 mt-8 pt-8 text-center">
           <p className="text-background/60 text-sm">
-            © 2024 Grupo de Oncologia Cutânea. Todos os direitos reservados.
+            © 2024 Grupo de Oncologia Cutânea. Desenvolvido por{" "}
+            <a 
+              href="https://wa.me/5571999341709?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20o%20or%C3%A7amento%20de%20um%20site%2Fsistema."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-medical-orange hover:text-medical-orange/80 transition-colors cursor-pointer"
+            >
+              Ítalo Macedo
+            </a>
+            . Todos os direitos reservados.
           </p>
         </div>
       </div>
