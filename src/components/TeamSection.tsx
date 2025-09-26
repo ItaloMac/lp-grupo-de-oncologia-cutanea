@@ -35,7 +35,7 @@ const TeamSection = () => {
 
     {
       name: "Dr. Victor Carmine De Siervi",
-      specialty: "Graduado em Medicina pela Universidade Federal da Bahia e especialista em Cirurgia Oncológica pelo renomado AC Camargo Cancer Center, Dr. Carmine possui ampla experiência no tratamento do câncer de pele. Atualmente, Mestre em Oncologia com foco em Melanoma pela Fundação Antonio Prudente|AC Camargo. Com treinamento complementar em Cirurgia Micrográfica de Mohs, realizou um fellow com o Dr. Abel Gonzalez, em Buenos Aires, e participou de um treinamento avançado pela American Society for Mohs Surgery, em Houston, Texas.",
+      specialty: "Graduado em Medicina pela Universidade Federal da Bahia e especialista em Cirurgia Oncológica pelo renomado AC Camargo Cancer Center, Dr. Carmine possui ampla experiência no tratamento do câncer de pele. Mestre em Oncologia com foco em Melanoma pela Fundação Antonio Prudente|AC Camargo. Com treinamento complementar em Cirurgia Micrográfica de Mohs, realizou um fellow com o Dr. Abel Gonzalez, em Buenos Aires, e participou de um treinamento avançado pela American Society for Mohs Surgery, em Houston, Texas.",
       image: <img src="/img/equipe/carmine.png" alt="Dr. Victor Carmine De Siervi"  />     }
   ];
 
