@@ -130,17 +130,16 @@ const SurgerySection = () => {
             
             <div className="bg-background rounded-2xl p-6 shadow-medical">
               <div className="space-y-4">
+              <div>
+                  <h3 className="text-lg font-bold text-medical-blue mb-2">Tratamentos sistêmicos:</h3>
+                  <p className="text-muted-foreground text-sm">
+                    São as terapia medicamentosos utilizados para fazer o controle da doença mais avançada, seja aumentando as chances de cura antes ou depois da cirurgia, ou como base do tratamento da doença metastática. Utilizamos tratamentos de última geração tais como terapia alvo e diversas modalidades de imunoterapia.
+                  </p>
+                </div>
                 <div>
                   <h3 className="text-lg font-bold text-medical-blue mb-2">Radioterapia:</h3>
                   <p className="text-muted-foreground text-sm">
                     A radioterapia é uma modalidade de tratamento local que pode substituir uma cirurgia quando esta não for possível ou mesmo complementar o tratamento cirúrgico.
-                  </p>
-                </div>
-                
-                <div>
-                  <h3 className="text-lg font-bold text-medical-blue mb-2">Tratamentos sistêmicos:</h3>
-                  <p className="text-muted-foreground text-sm">
-                    São as terapia medicamentosos utilizados para fazer o controle da doença mais avançada, seja aumentando as chances de cura antes ou depois da cirurgia, ou como base do tratamento da doença metastática. Utilizamos tratamentos de última geração tais como terapia alvo e diversas modalidades de imunoterapia.
                   </p>
                 </div>
               </div>
